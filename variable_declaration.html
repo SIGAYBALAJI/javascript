@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <script>
+            let x="outside"+typeof carname
+            document.getElementById("demo1").innerHTML=x
+            function myfunction(){
+                let carname="volvo"
+
+                let x="inside"+typeof carname+" "+carname
+              
+                document.getElementById("demo2").innerHTML=x
+            }
+            myfunction()
+          
+        </script>
+    </body>
+</html>
